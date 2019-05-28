@@ -1,0 +1,100 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formularios y Campos</title>
+  </head>
+  <body>
+      <form class="formulario">
+            <fieldset>
+              <legend>Datos</legend>
+                      <label for="nombre"> Nombres: </label>
+                      <input type="text" name="nombre" placeholder="Su nombre aca" autocomplete="off">
+                      <br>
+                      <br>
+                      <label for="apellido"> Apellidos: </label>
+                      <input type="text" name="apellido" placeholder="Sus Apellidos aca" autocomplete="off">
+                      <br>
+                      <br>
+                      <label for="Sexo"> Sexo </label> <br>
+                      <input type="radio" name="sexo" value="Hombre"> Hombre <br>
+                      <input type="radio" name="sexo" value="Mujer">  Mujer <br>
+                      <input type="radio" name="sexo" value="Otro">   Otro
+                      <br><br>
+                      <label>Fecha de Nacimiento</label>
+                      <input type="date" name="cumpleaños">
+                      <br><br>
+                      <label>Correo</label>
+                      <input type="email" name="email" placeholder="Correo Electronico">
+                      <br><br>
+                      <label>Sitio Web</label>
+                      <input type="url" name="url" placeholder="http://dominio.com">
+                      <br><br>
+                      <label>Cuanto sabes de HTML</label>
+                      <input type="range"  name="puntaje" min="0" max="10">
+
+                      <br><br>
+                      <label>Personas que vienen con tigo</label>
+                      <input type="number"  name="acompañantes" min="1" max="10">
+            </fieldset>
+          <br>
+          <br>
+          <fieldset>
+              <legend>Informacion del Curso</legend>
+                  <label for="turno"> Turno </label>
+                      <select id="turno" class="turno" name="turno">
+                          <option value="Vespertino">Vespertino</option>
+                          <option value="Nocturno">Nocturno</option>
+                          <option value="matutino" selected>Matutino</option>
+                      </select>
+                      <br><br>
+                      <label for="">Que curso te gustaria que agregaramos</label>
+                      <input list="propuesta" name="encuesta">
+                      <datalist id="propuesta">
+                          <option value="jQuery">
+                          <option value="Aplicaciones web">
+                          <option value="Angular js">
+                          <option value="Bootstrap">
+                      </datalist>
+                      <br><br>
+
+                      <label>Elige tus cursos</label>
+                      <br>
+                      <input type="checkbox" name="" value="php">PHP <br>
+                      <input type="checkbox" name="" value="html5">HTML5 <br>
+                      <input type="checkbox" name="" value="css3">CSS3 <br>
+                      <input type="checkbox" name="" value="jquery">jQuery <br>
+                      <br>
+                      <label>Fecha que deseas iniciar</label>
+                      <input type="date" name="inicio">
+                      <br><br>
+                      <label>Fecha de finalizacion</label>
+                      <input type="date" name="fincurso">
+                      <br><br>
+                      <label>Hora</label>
+                      <input type="time" name="hora">
+          </fieldset>
+          <br>
+
+          <fieldset>
+                  <legend>Extra</legend>
+                  <label>Las primeras 10 personas reciben camisa</label>
+                  <input type="color" name="color" value="black">
+                  <br>
+          </fieldset>
+
+          <fieldset>
+                  <legend>Usuario y Password</legend>
+                  <label>Usuario</label>
+                  <input type="text" name="usuario" placeholder="Usuario">
+                  <br><br>
+                  <label>Password</label>
+                  <input type="password" name="password" placeholder="Password">
+          </fieldset>
+
+          <br>
+          <button type="reset" name="borrar">Borrar</button>
+          <button type="submit" name="enviar" value="Enviar">Enviar</button>
+      </form>
+  </body>
+</html>

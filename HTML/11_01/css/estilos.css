@@ -1,0 +1,165 @@
+/* Selectores de ID's*/
+#titulo {
+  color: Red;
+}
+
+#logo {
+  /*margin-top: 200px;*/
+}
+
+/*Selectores de clases */
+.rojo{
+  color: red;
+}
+.logo{
+  margin-top: 200px;
+}
+/*Selectores con clase y ID*/
+#titulo.titulo{
+  font-size: 60px;
+}
+/*Selectores con dos clases*/
+.azul.tituloCurso{
+  color: blue;
+}
+/*Selectores con elementos HTML*/
+p {
+  color: brown;
+}
+
+h2 {
+  color: orange;
+}
+
+h3 {
+  color: green;
+}
+
+img {
+  width: 300px;
+}
+/*Selectores HTML y ID*/
+img#logo {
+  width: 600px;
+}
+
+h2#titulo {
+  color: orange;
+}
+
+/*Selectores HTML y clases*/
+
+section.seccion {
+  background-color: grey;
+}
+
+div.noticia {
+  background: white;
+}
+
+/* Selector Universal
+* {
+  color:black!important;
+}
+
+
+#listado-cursos * {
+  font-size: 30px;
+} */
+
+/* Selesctores de grupo*/
+
+h2, h3, p, a {
+  text-transform: uppercase;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+/*Selector Descendientes*/
+
+nav#navegacion{
+  background-color: orange;
+}
+
+nav#navegacion ul {
+  list-style: none;
+}
+
+nav#navegacion ul li {
+  display: inline;
+}
+
+nav#navegacion ul li a {
+  color: white;
+}
+
+/*Selector con hijos*/
+
+section#cursos > ul {
+  border: 1px solid black;
+}
+
+ul#listado-cursos li ul > li  {
+  color: green;
+}
+
+/*Selector con Elementos adyacentes*/
+ul#listado-cursos + p {
+  background-color: cornflowerblue !important;
+}
+
+/*Selescotres para Enlaces*/
+a[href*="fb.com"] {
+  background-color: darkgoldenrod;
+}
+
+a[href*="google.com"] {
+  background-color: rgb(55, 53, 204);
+}
+
+/*Selescotres de Atributo*/
+img[id="logo"]{
+  margin-top: 0;
+}
+
+[class="seccion"]{
+  background-color: blue!important;
+}
+/*Selescotres con seudo-clases*/
+div.menu nav ul li a:visited,
+div.menu nav ul li a:focus,
+div.menu nav ul li a:active {
+  color:black;
+}
+
+div.menu nav ul li a:hover{
+  color: orangered;
+}
+
+div.menu nav ul li:first-child a{  
+  text-decoration: none;
+}
+
+/*Selescotres con seudo-clases y NTH-CHILD*/
+
+div.menu nav ul li:nth-child(1){  
+  background-color: royalblue;
+}
+div.menu nav ul li:nth-child(2){  
+  background-color: rebeccapurple;
+}
+div.menu nav ul li:nth-child(3){  
+  background-color: purple;
+}
+div.menu nav ul li:nth-child(4){  
+  background-color: yellow;
+}
+
+table tbody tr:nth-child(odd){
+  background-color: orange;
+}
+table tbody tr:nth-child(even){
+  background-color: purple;
+}
