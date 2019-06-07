@@ -1,3 +1,4 @@
+/*tipografia del body*/
 body{
     font-family: 'Lato', sans-serif;
 }
@@ -41,4 +42,3 @@ body{
 .navegacion a:hover{
     color: green;
 }
-
