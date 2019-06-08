@@ -1,10 +1,13 @@
+html{
+    font-size: 62.5%;
+}
 body{
     font-family: 'Lato', sans-serif;
 }
 
 *globales*/
 .contenedor{
-    max-width: 1200px;
+    max-width: 120rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -16,13 +19,21 @@ body{
     background-position: center center;
     background-size: cover;
     height: 100vh;
-    min-height: 600px;
+    min-height: 60rem;
+}
+
+.contenido-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .barra{
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 3rem;
+    align-items: center;
 }
 
 /*navegacion*/
@@ -30,8 +41,8 @@ body{
 .navegacion a{
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    margin-right: 20px;
+    font-size: 1.8rem;
+    margin-right: 2rem;
 }
 
 .navegacion a:last-of-type{
