@@ -13,6 +13,9 @@ body{
     margin-right: auto;
 }
 
+img {
+    max-width: 100%;
+}
 h1{font-size: 3.8rem;}
 h2{font-size: 3.4rem;}
 h3{font-size: 3rem;}
@@ -22,6 +25,14 @@ h4{font-size: 2.6rem}
 .seccion{
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+
+.center-text{
+    text-align: center;
 }
 /* Header */
 
@@ -71,3 +82,32 @@ h4{font-size: 2.6rem}
     color: green;
 }
 
+/*Iconos nosotros*/
+
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+.icono{
+    flex-basis: 32%;
+    text-align: center;
+}
+
+.icono h3{
+    text-transform: uppercase;
+}
+
+.icono p{
+    line-height: 2;
+}
+
+/*Main*/
+
+/*Contenedor anuncios*/
+.contenedor-anuncios{
+    display: flex;
+}
+
+.anuncio{
+    flex-basis: 32%;
+}
