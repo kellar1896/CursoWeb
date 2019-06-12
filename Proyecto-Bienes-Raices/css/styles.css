@@ -34,6 +34,24 @@ h4{font-size: 2.6rem}
 .center-text{
     text-align: center;
 }
+
+/*Botones*/
+
+.boton{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.boton-verde{
+    background-color: green;
+}
+
+.boton-amarillo{
+    background-color: orange;
+}
+
 /* Header */
 
 .site-header.inicio{
@@ -106,6 +124,8 @@ h4{font-size: 2.6rem}
 /*Contenedor anuncios*/
 .contenedor-anuncios{
     display: flex;
+    justify-content: space-between;
+    
 }
 
 .anuncio{
@@ -118,6 +138,16 @@ h4{font-size: 2.6rem}
 
 .informacion-anuncio{
     padding: 2rem;
+}
+
+.informacion-anuncio h3, 
+.informacion-anuncio p{
+    margin: 0;
+}
+
+.precio{
+    color: green;
+    font-weight: 700;
 }
 
 
