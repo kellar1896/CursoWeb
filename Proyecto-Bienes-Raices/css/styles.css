@@ -170,7 +170,6 @@ h4{font-size: 2.6rem}
 .iconos-caracteristicas{
     list-style: none;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
 }
 
@@ -294,6 +293,8 @@ h4{font-size: 2.6rem}
 }
 
 /*internas*/
+
+/*Nosotros pagina*/
 .contenido-nosotros{
     display: grid;
     grid-template-columns: 50% 50%;
