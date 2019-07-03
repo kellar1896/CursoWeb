@@ -16,6 +16,10 @@ body{
 img {
     max-width: 100%;
 }
+
+p{
+    font-size: 2rem;
+}
 h1{font-size: 3.8rem;}
 h2{font-size: 3.4rem;}
 h3{font-size: 3rem;}
@@ -31,12 +35,24 @@ h4{font-size: 2.6rem}
     font-weight: 300;
 }
 
+.fontsize-2rem{
+    font-size: 2rem;
+}
+
 .center-text{
     text-align: center;
 }
 
 .d-block{
     display: block!important;
+}
+
+.contenido-centrado{
+    max-width: 800px!important;
+}
+
+.justificar{
+    text-align: justify
 }
 
 /*Botones*/
@@ -138,14 +154,17 @@ h4{font-size: 2.6rem}
 .contenedor-anuncios{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .anuncio{
-    flex-basis: 32%;
+    flex-basis: calc(33.3% - 2rem);
+    flex-shrink: 0;
     border-style: solid;
     border-color: grey;
     border-width: 0.1rem;
     background-color: #f5f5f5;
+    margin-bottom: 2rem;
 }
 
 .informacion-anuncio{
@@ -170,7 +189,10 @@ h4{font-size: 2.6rem}
 .iconos-caracteristicas{
     list-style: none;
     display: flex;
+    flex: 1;
     justify-content: space-evenly;
+    align-items: center;
+    max-width: 50rem;
 }
 
 /*Contacto Home*/
@@ -311,4 +333,11 @@ h4{font-size: 2.6rem}
 .texto-nosotros{
     font-size: 2rem;
     text-align: justify;
+}
+
+/*Anuncio*/
+.resumen-propiedad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
