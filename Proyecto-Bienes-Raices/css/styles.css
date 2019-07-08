@@ -68,6 +68,10 @@ h4{font-size: 2.6rem}
     text-align: center;
 }
 
+.boton:hover{
+    cursor: pointer;
+}
+
 .boton-verde{
     background-color: green;
 }
@@ -343,7 +347,49 @@ h4{font-size: 2.6rem}
 }
 
 /* Contacto */
+fieldset{
+    margin-bottom: 2rem;
+}
+
+form p{
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem 0;
+}
+
+legend{
+    font-size: 2.5rem;
+    color: #333333;
+    margin-bottom: 2rem;
+}
 
 label{
+    font-size: 1.5rem;
     display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+input:not([type="submit"]), textarea{
+    display: block;
+    padding: 1rem;
+    background-color: #e1e1e1;
+    width: 97%;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+textarea{
+    height: 20rem;
+    width: 75rem;
+}
+
+.forma-contacto{
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="radio"]{
+    margin-bottom: auto;
 }

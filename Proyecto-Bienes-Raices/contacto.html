@@ -68,11 +68,15 @@
 
             <fieldset>
                 <p>Como desea ser contactado</p>
-                <label for="opcion-telefono">Teléfono</label>
-                <input type="radio" name="opcion-radio" value='opcion-telefono' id="opcion-telefono">
 
-                <label for="opcion-email">E-mail</label>
-                <input type="radio" value="opcion-email" name="opcion-radio" id="opcion-email">
+                <div class="forma-contacto">
+                    <label for="opcion-telefono">Teléfono</label>
+                    <input type="radio" name="opcion-radio" value='opcion-telefono' id="opcion-telefono">
+
+                    <label for="opcion-email">E-mail</label>
+                    <input type="radio" value="opcion-email" name="opcion-radio" id="opcion-email">
+
+                </div>
 
                 <p>si eligio Telefono, elija la fecha y hora</p>
 
@@ -84,7 +88,7 @@
                 
             </fieldset>
 
-            <input type="button" value="Enviar" class="boton boton-verde">
+            <input type="submit" value="Enviar" class="boton boton-verde">
         </form>
     </main>
 
