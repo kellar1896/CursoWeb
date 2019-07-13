@@ -129,3 +129,30 @@
       flex-shrink: 0;
       flex-basis: 100%;
   }
+
+  .cursos{
+      order: -1;
+  }
+
+  @media (min-width: 768px) {
+      .contenido-principal{
+          justify-content: space-between;
+      }
+
+      .blog{
+          flex-basis: 66.66%;
+      }
+      .cursos{
+          flex-basis: calc(33.3% - 4rem);
+          order: 2;
+      }
+  }
+
+  .entrada-blog{
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #e1e1e1;
+  }
+
+  .entrada-blog:last-of-type{
+      border: none;
+  }
