@@ -95,11 +95,17 @@
       font-family: 'PT Sans',sans-serif;
       text-transform: uppercase;
       font-size: 2rem;
+      flex: 0 0 100%;
+  }
+
+  .boton:hover{
+      cursor: pointer;
   }
 
   @media (min-width: 768px) {
       .boton{
           display: inline-block;
+          flex: 0 0 auto;
       }
       
   }
@@ -286,4 +292,24 @@
 .campo{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.campo label{
+    flex: 0 0 8rem;
+}
+
+.campo textarea,input:not([type="submit"]){
+    flex: 0 0 calc(100% - 9rem);
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+
+.campo textarea{
+    height: 20rem;
+}
+
+.campo.enviar{
+    display: flex;
+    justify-content: flex-end;
 }
